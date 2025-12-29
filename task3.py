@@ -1,6 +1,5 @@
-# Store width and height in variables, calculate area.
+# Check if a number is divisible by both 3 and 5
 
-width = 100
-height = 50
-area = width * height
-print(area)
+num = eval(input("Enter the number:-"))
+if num%3==0 and num%5==0:
+    print(num)

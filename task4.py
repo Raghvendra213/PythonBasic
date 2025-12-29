@@ -1,7 +1,23 @@
-# Take name and age as input from the user and print a welcome message 
+# Men-Driven Calculator (using if - elif - else)
+print(''' 
+    + Add
+    - Sub
+    * Mul
+    / Div
 
-name = input("Enter your name:-") # string 
+''')
 
-age = input("Enter your age:-") # string
+num1 = eval(input('Enter the value1:-'))  
+num2 = eval(input('Enter the value2:-'))
+userCh = input('Enter the user choice:- ') # +,-,*,/
 
-print("Welcome",name,"You are",age,"Years old")
+if userCh=="+":
+    print(num1+num2)
+elif userCh=="-":
+    print(num1-num2)
+elif userCh=="*":
+    print(num1*num2)
+elif userCh=="/":
+    print(num1/num2)
+else:
+    print("Invalid Operation")

@@ -1,28 +1,8 @@
-# Swap values of two variables and print before and after 
+# Check if a year is a leap year or not.
 
-x = 10
-y = 20
+year = eval(input("Enter the number:-"))
 
-# first Method 
-
-# temp = x # temp = 10
-# x = y    # x = 20
-# y = temp # y = 10
-
-
-# print("X:-",x) 
-# print("Y:-",y)
-
-# Second Method
-
-# x = x + y # 10 + 20 = 30
-# y = x - y # 30 - 20 = 10
-# x = x - y # 30 - 10 = 20 
-
-# print("X",x)
-# print("Y",y)
-
-x,y = y,x
-print("X",x)
-print("Y",y)
-
+if (year % 400 == 0) or (year%4==0 and year%100!=0):
+    print(year,"Its a leap year")
+else:
+    print(year,"Its not a leap year")

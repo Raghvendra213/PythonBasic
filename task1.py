@@ -1,8 +1,9 @@
-# Print write your name, age and favourite language using variables
+# Write a program to check if a number is positive negative or zero.
 
-name = "Raghav Pandey"
-age = 30
-favlanguage = "Python"
-print(name)
-print(age)
-print(favlanguage)
+num = eval(input("Enter the number:-"))
+if num>0:
+    print("Its positive number.")
+elif num<0:
+    print("Its negative number")
+else:
+    print("Zero")
